@@ -1,0 +1,102 @@
+.auth-form-container {
+    position: relative;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 100%;
+    height: 900px;
+}
+
+body {
+    background-color: #080710;
+    position: relative;
+    align-items: center;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.13);
+    position: relative;
+    margin-top: 50px;
+    left: 30%;
+    width: 600px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+@media only screen and (max-width: 900px) {
+    .form {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .auth-form-container {
+        padding: 50px;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .form {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .auth-form-container {
+        padding: 30px;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+.form h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+.form .btn {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -9,6 +9,7 @@ import Register from "../pages/register";
 import Footer from "../components/footer";
 import AllBooks from "../pages/allbooks";
 import Collection from "../pages/collection"
+import About from "../pages/about"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Navbar />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
+                    <Route exact path="/about" element={<About />} />
                     <Route exact path="/login" element={<Login />} />
                     <Route exact path="/register" element={<Register />} />
                     <Route exact path="/allBooks" element={<AllBooks />} />

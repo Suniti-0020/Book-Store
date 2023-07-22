@@ -21,6 +21,8 @@ const Navbar = () => {
             <nav ref={navRef}>
                 <ul>
                     <Link className="link" to="/">Home</Link>
+                    <Link className="link" to="/allbooks">All Books</Link>
+                    <Link className="link" to="/collection">My Collections</Link>
                     <Link className="link" to="/login">Login</Link>
                     <Link className="link" to="/register">Register</Link>
                 </ul>

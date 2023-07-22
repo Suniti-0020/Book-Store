@@ -6,19 +6,24 @@ import Navbar from "../pages/navbar";
 import Home from "../pages/home";
 import Login from "../pages/login";
 import Register from "../pages/register";
-import Footer from "../components/footer"
+import Footer from "../components/footer";
+import AllBooks from "../pages/allbooks";
+import Collection from "../pages/collection"
+
 
 function App() {
 
+
     return (
         <div className="App">
-            {/* <Header /> */}
             <Router>
                 <Navbar />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/login" element={<Login />} />
-                    <Route exact path="register" element={<Register />} />
+                    <Route exact path="/register" element={<Register />} />
+                    <Route exact path="/allBooks" element={<AllBooks />} />
+                    <Route exact path="/collection" element={<Collection />} />
                 </Routes>
             </Router>
             <Footer />

@@ -1,20 +1,20 @@
 .container {
     backdrop-filter: blur(16px) saturate(180%);
     /* -webkit-backdrop-filter: blur(16px) saturate(180%); */
-    background-color: rgba(4, 35, 87);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    padding: 10px;
+    background-color: rgb(227, 227, 227);
+    border-radius: 3px;
+    /* border: 1÷px solid rgba(255, 255, 255, 0.125); */
+    padding: 15px;
     /* filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125)); */
     display: inline-block;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
     width: 220px;
-    height: 280px;
+    height: 300px;
     /* box-sizing: border-box; */
-    margin: 30px;
+    margin: 20px;
     /* display: flex; */
 
 }
@@ -44,21 +44,40 @@ body {
 h1,
 .name {
     font-family: 'Righteous', sans-serif;
-    color: rgba(255, 255, 255, 0.98);
+    color: rgba(8, 8, 8, 0.98);
     /* text-transform: uppercase; */
     font-size: 16px;
-    height: 40px;
+    height: 50px;
 }
 
 
 .info {
-    color: #fff;
+    color: #757575;
     font-family: 'Lato', sans-serif;
-    text-align: center;
-    font-size: 12px;
-    line-height: 150%;
-    letter-spacing: 2px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 1.5px;
     /* text-transform: uppercase; */
+}
+
+
+.bMark {
+    padding: 0 !important;
+    position: absolute !important;
+    width: 24px !important;
+    right: -13px ;
+    color: #1d4395d1 !important;
+}
+
+.disp {
+    position: relative;
+}
+    
+.rating {
+    position: absolute;
+    right: 0px;
 }
 
 .button-wrapper {
@@ -67,11 +86,11 @@ h1,
 }
 
 .btn {
-    color: #fff;
-    border: none;
-    padding: 5px 5px;
-    border-radius: 24px;
-    font-size: 12px;
+    color:  #1d4395d1;
+    padding: 1px 8px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: bold;
     /* font-size: 0.8rem; */
     letter-spacing: 2px;
     cursor: pointer;
@@ -99,16 +118,20 @@ h1,
 }
 
 .fill {
-    background: rgba(0, 212, 255, 0.9);
-    color: rgba(255, 255, 255, 0.95);
+    background:  rgb(227, 227, 227);
+    color: #1d4395d1;
     filter: drop-shadow(0);
     font-weight: bold;
     transition: all .3s ease;
+    border: 3px solid #1d4395d1;
 }
 
 .fill:hover {
     transform: scale(1.125);
-    border-color: rgba(255, 255, 255, 0.9);
+    color: rgb(227, 227, 227);
+    background-color: #1d4395d1;
     filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
-    transition: all .3s ease;
+    transition: all .5s ease-in-out;
+    border: 3px solid  #1d4395d1;
+    ;
 }

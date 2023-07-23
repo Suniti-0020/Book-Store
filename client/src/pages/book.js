@@ -22,14 +22,16 @@ function Book(props) {
             <div className="wrapper">
                 <img className="banner-image" src={props.image} width={190} height={150} class="card-img-top" alt="..." />
                 <h1 className="name">{props.name}</h1>
-                <p className="info">{props.category}</p>
-
-                <div className="button-wrapper">
-                    <span className="rating btn">{props.rating}</span>
-                    <button class="btn fill">BUY NOW</button>
-                    <Button onClick={handleIconClick}>
+                <div className="disp">
+                    <span className="info">{props.category}</span>
+                    <Button className="bMark" onClick={handleIconClick}>
                         {clicked ? <BookmarkIcon /> : <TurnedInNotIcon />}
                     </Button>
+                </div>
+
+                <div className="button-wrapper disp">
+                    <button class="btn fill">Purchase</button>
+                    <span className="rating btn">{props.rating}</span>
                 </div>
             </div>
         </div>

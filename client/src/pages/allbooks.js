@@ -4,7 +4,7 @@ import bookspedia from "../bookspedia";
 
 function AllBooks() {
     return <div className="featured">
-        <h2>All Books</h2>
+        <h1 className="aBH1">All Books</h1>
         {bookspedia.map((book) => {
             return (
                 <Book

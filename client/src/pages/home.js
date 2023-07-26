@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Book from "./book"
 import bookspedia from "../bookspedia";
 
 
 function Home() {
 
+    const [item, setItem] = useState(bookspedia);
 
     return (
 
@@ -30,17 +31,9 @@ function Home() {
 
             <div className="featured">
                 <h2>Featured Books</h2>
-                {bookspedia.slice(2, 7).map((book) => {
-                    return (
-                        <Book
-                            key={book.id}
-                            name={book.name}
-                            image={book.image}
-                            category={book.category}
-                            rating={book.rating}
-                        />
-                    );
-                })}
+
+                <Book item={item.slice(2, 7)} />
+
             </div>
 
         </div>

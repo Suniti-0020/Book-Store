@@ -5,7 +5,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import "../images/.."
 import "../CSS/book.css"
 
-function Book(props) {
+const Book = ({ item }) => {
 
     const [clicked, setClicked] = useState(false)
     function handleIconClick() {
@@ -18,23 +18,29 @@ function Book(props) {
     }
 
     return (
-        <div className="container" >
-            <div className="wrapper">
-                <img className="banner-image" src={props.image} width={190} height={150} class="card-img-top" alt="..." />
-                <h1 className="name">{props.name}</h1>
-                <div className="disp">
-                    <span className="info">{props.category}</span>
-                    <Button className="bMark" onClick={handleIconClick}>
-                        {clicked ? <BookmarkIcon /> : <TurnedInNotIcon />}
-                    </Button>
-                </div>
+        <>
+            {item.map((Val) => {
+                return (
+                    <div className="container" >
+                        <div className="wrapper">
+                            <img className="banner-image" src={Val.image} width={190} height={150} class="card-img-top" alt="..." />
+                            <h1 className="name">{Val.name}</h1>
+                            <div className="disp">
+                                <span className="info">{Val.category}</span>
+                                <Button className="bMark" onClick={handleIconClick}>
+                                    {clicked ? <BookmarkIcon /> : <TurnedInNotIcon />}
+                                </Button>
+                            </div>
 
-                <div className="button-wrapper disp">
-                    <button class="btn fill">Purchase</button>
-                    <span className="rating btn">{props.rating}</span>
-                </div>
-            </div>
-        </div>
+                            <div className="button-wrapper disp">
+                                <button class="btn fill">Purchase</button>
+                                <span className="rating btn">{Val.rating}</span>
+                            </div>
+                        </div>
+                    </div>
+                );
+            })}
+        </>
     )
 }
 

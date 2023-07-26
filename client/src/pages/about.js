@@ -1,9 +1,10 @@
 import React from "react";
+import "../CSS/about.css"
 
 function About() {
-    return <div>
+    return (<div>
 
-    </div>
+    </div>)
 }
 
 export default About

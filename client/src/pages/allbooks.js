@@ -1,21 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Book from "./book";
 import bookspedia from "../bookspedia";
+import Buttons from "./button";
+
+
 
 function AllBooks() {
+
+    const [item, setItem] = useState(bookspedia);
+
+    const menuItems = [...new Set(bookspedia.map((book) => book.category))];
+
+    const filterItem = (curcat) => {
+        const newItem = bookspedia.filter((newVal) => {
+            console.log(newVal.category === curcat)
+            if (newVal.category === curcat) {
+                return newVal
+            }
+        });
+
+        setItem(newItem);
+    };
+
+
+
     return <div className="featured">
         <h1 className="aBH1">All Books</h1>
-        {bookspedia.map((book) => {
-            return (
-                <Book
-                    key={book.id}
-                    name={book.name}
-                    image={book.image}
-                    category={book.category}
-                    rating={book.rating}
-                />
-            );
-        })}
+        <Buttons
+            filterItem={filterItem}
+            setItem={setItem}
+            menuItems={menuItems}
+        />
+
+        <Book item={item} />
+
     </div>
 }
 

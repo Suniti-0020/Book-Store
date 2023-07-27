@@ -15,15 +15,15 @@ function Login(props) {
         <div>
             <div className="auth-form-container">
                 <form className="login-form form" onSubmit={handleSubmit}>
-                    <div className="separate">
+                    <div className="separateL">
                         <img className="auth-img" src="https://www.globalsign.com/application/files/4616/2199/5695/ManagedPKI_Strong_Authentication_Cover_1_APAC_2021_05_19.jpg" alt="authentication " />
                     </div>
-                    <div>
+                    <div className="separateR">
                         <p className="change">
                             Don't have an account <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Register</button>
                         </p>
                         <h3>Weclome to BooKraze</h3>
-                        <p>Dicover a world of stories </p>
+                        <p className="tagline">Dicover a world of stories </p>
                         <h1>Login</h1>
                         <label className="label" htmlFor="email">Username</label>
                         <input className="input" value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />

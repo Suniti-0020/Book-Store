@@ -16,14 +16,14 @@ function Register(props) {
 
             <div className="auth-form-container register">
                 <form className="register-form form" onSubmit={handleSubmit}>
-                    <div className="separate">
+                    <div className="separateL">
                         <img className="auth-img" src="https://www.globalsign.com/application/files/4616/2199/5695/ManagedPKI_Strong_Authentication_Cover_1_APAC_2021_05_19.jpg" alt="authentication " />
                     </div>
-                    <div>
+                    <div className="separateR">
                         <p className="change">Already have an account
                             <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Login </button></p>
                         <h3>Weclome to BooKraze</h3>
-                        <p>Dicover a world of stories </p>
+                        <p className="tagline">Dicover a world of stories </p>
                         <h1>Register</h1>
                         <label className="label" htmlFor="name">Full name</label>
                         <input className="input" value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="full Name" />

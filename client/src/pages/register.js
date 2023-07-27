@@ -1,14 +1,39 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios"
 import "../CSS/Reg&Log.css"
 
 function Register(props) {
-    const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
-    const [name, setName] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(email);
+        try {
+            const { data } = await axios.post('/api/v1/user/register', {
+                username: inputs.name,
+                email: inputs.email,
+                password: inputs.password
+            });
+            if (data.success) {
+                alert("user regisr successfully");
+                navigate("/login");
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    const navigate = useNavigate();
+
+    const [inputs, setInputs] = useState({
+        name: '',
+        email: '',
+        password: ''
+    })
+    const handleChange = (e) => {
+        setInputs((prevState) => ({
+            ...prevState,
+            [e.target.name]: e.target.value
+        }))
     }
 
     return (
@@ -21,16 +46,18 @@ function Register(props) {
                     </div>
                     <div className="separateR">
                         <p className="change">Already have an account
-                            <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Login </button></p>
+                            <button className="link-btn" onClick={() => navigate('/login')}>Login </button></p>
                         <h3>Weclome to BooKraze</h3>
                         <p className="tagline">Dicover a world of stories </p>
                         <h1>Register</h1>
                         <label className="label" htmlFor="name">Full name</label>
-                        <input className="input" value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="full Name" />
+                        <input className="input" onChange={handleChange} value={inputs.name} name="name" id="name" placeholder="full Name" />
+
                         <label className="label" htmlFor="email">E-mail</label>
-                        <input className="input" value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+                        <input className="input" onChange={handleChange} value={inputs.email} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+
                         <label className="label" htmlFor="password">Password</label>
-                        <input className="input" value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
+                        <input className="input" onChange={handleChange} value={inputs.password} type="password" placeholder="********" id="password" name="password" />
                         <button className="btn" type="submit">Register</button>
                     </div>
                 </form>

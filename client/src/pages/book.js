@@ -9,12 +9,7 @@ const Book = ({ item }) => {
 
     const [clicked, setClicked] = useState(false)
     function handleIconClick() {
-        if (clicked === false) {
-            setClicked(true)
-        } else {
-            setClicked(false)
-        }
-
+        setClicked(!clicked)
     }
 
     return (

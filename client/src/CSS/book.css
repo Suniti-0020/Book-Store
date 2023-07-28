@@ -4,12 +4,9 @@
 
 .container {
     backdrop-filter: blur(16px) saturate(180%);
-    /* -webkit-backdrop-filter: blur(16px) saturate(180%); */
     background-color: rgb(227, 227, 227);
     border-radius: 3px;
-    /* border: 1÷px solid rgba(255, 255, 255, 0.125); */
     padding: 15px;
-    /* filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125)); */
     display: inline-block;
     flex-direction: column;
     align-items: left;
@@ -17,10 +14,7 @@
     text-align: left;
     width: 220px;
     height: 300px;
-    /* box-sizing: border-box; */
     margin: 20px;
-    /* display: flex; */
-
 }
 
 body {
@@ -49,7 +43,6 @@ h1,
 .name {
     font-family: 'Righteous', sans-serif;
     color: rgba(8, 8, 8, 0.98);
-    /* text-transform: uppercase; */
     font-size: 16px;
     height: 50px;
 }
@@ -63,7 +56,6 @@ h1,
     font-weight: bold;
     line-height: 30px;
     letter-spacing: 1.5px;
-    /* text-transform: uppercase; */
 }
 
 
@@ -71,14 +63,15 @@ h1,
     padding: 0 !important;
     position: absolute !important;
     width: 24px !important;
-    right: -13px ;
+    right: -13px;
+    height: 30px;
     color: #1d4395d1 !important;
 }
 
 .disp {
     position: relative;
 }
-    
+
 .rating {
     position: absolute;
     right: 0px;
@@ -90,12 +83,11 @@ h1,
 }
 
 .btn {
-    color:  #1d4395d1;
+    color: #1d4395d1;
     padding: 1px 8px;
     border-radius: 9px;
     font-size: 14px;
     font-weight: bold;
-    /* font-size: 0.8rem; */
     letter-spacing: 2px;
     cursor: pointer;
 
@@ -122,7 +114,7 @@ h1,
 }
 
 .fill {
-    background:  rgb(227, 227, 227);
+    background: rgb(227, 227, 227);
     color: #1d4395d1;
     filter: drop-shadow(0);
     font-weight: bold;
@@ -136,7 +128,7 @@ h1,
     background-color: #1d4395d1;
     filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
     transition: all .5s ease-in-out;
-    border: 3px solid  #1d4395d1;
+    border: 3px solid #1d4395d1;
     ;
 }
 

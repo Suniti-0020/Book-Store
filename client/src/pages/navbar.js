@@ -54,6 +54,10 @@ const Navbar = () => {
                 }
 
                 {!isLogin && <ul>
+                    <NavLink exact activeClassName="active" className="link" to="/">Home</NavLink>
+                    <NavLink activeClassName="active" className="link" to="/about">About</NavLink>
+                    <NavLink activeClassName="active" className="link" to="/allbooks">All Books</NavLink>
+                    <NavLink activeClassName="active" className="link" to="/collection">My Collections</NavLink>
                     <NavLink activeClassName="active" className="link" to="/login">Login</NavLink>
                     <NavLink activeClassName="active" className="link" to="/register">Register</NavLink>
                 </ul>}

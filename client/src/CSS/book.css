@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
 body {
-    background-color: #d9d4e7 !important;
+    background-color: #ffffff !important;
+}
+
+.aBH1 {
+    color: #1f0662;
+    font-weight: bolder;
+    border-bottom: 4px solid #180255;
 }
 
 .container {
@@ -9,9 +15,9 @@ body {
     text-align: left;
     width: 240px;
     position: relative;
-    margin: 10px 0px;
+    margin: 10px 5px;
     padding: 20px;
-    background-color: #f3f6fc;
+    background-color: #ece8e8da;
     transition: all 0.4s ease-out;
     /* width: 280px; */
     box-shadow: 2px 5px 10px rgba(145, 145, 145, 0.502);
@@ -58,10 +64,6 @@ body {
     color: #1d4395d1 ;
 }
 
-.container .box-text .button-wrapper {
-    margin: 0px 0px 2px;
-}
-
 .container .box-text .disp .btn {
     color:  #1d4395d1;
     padding: 1px 8px;
@@ -70,6 +72,7 @@ body {
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
+    border: 3px solid  #1d4395d1;
 }
  
 .container .box-text .disp .rating {
@@ -77,15 +80,6 @@ body {
     right: 0px;
 }
 
-.container .box-text .disp .btn {
-    background:  #e1e8f7;
-    color: #1d4395d1;
-    filter: drop-shadow(0);
-    font-weight: bold;
-    transition: all .3s ease;
-    border: 3px solid #1d4395d1;
-    width: 65%;
-}
 
 .container .box-text .disp .btn:hover {
     transform: scale(1.125);
@@ -96,20 +90,12 @@ body {
     border: 3px solid  #1d4395d1;
 }
 
-/* All books page */
-
-.aBH1 {
-    font-size: 2.5rem !important;
-    margin-bottom: 30px;
-    border-bottom: 5px solid #1d4395d1;
-}
-
 .filterBtn {
     overflow: scroll;
     margin-bottom: 50px;
 }
 
-.filterBtn .btn{
+.filterBtn .btn {
     margin: 10px;
     background-color: #eef5fc;
     color: #264d8b;

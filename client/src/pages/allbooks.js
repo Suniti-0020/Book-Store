@@ -24,19 +24,19 @@ function AllBooks() {
 
 
 
-    return (<div id="popular-container">
-                <div className="featured">
-
-                    <h1 className="aBH1">All Books</h1>
-                    <Buttons
-                        filterItem={filterItem}
-                        setItem={setItem}
-                        menuItems={menuItems}
-                    />
-
-                    <Book item={item} />
-                </div>
-            </div>)
+    return (
+        <div id="popular-container">
+            <div className="featured">
+                <h1 className="aBH1">All Books</h1>
+                <Buttons
+                    filterItem={filterItem}
+                    setItem={setItem}
+                    menuItems={menuItems}
+                />
+                <Book item={item} />
+            </div>
+        </div>
+    )
 }
 
 export default AllBooks;

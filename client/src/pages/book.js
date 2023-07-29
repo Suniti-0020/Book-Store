@@ -9,19 +9,14 @@ const Book = ({ item }) => {
 
     const [clicked, setClicked] = useState(false)
     function handleIconClick() {
-        if (clicked === false) {
-            setClicked(true)
-        } else {
-            setClicked(false)
-        }
-
+        setClicked(!clicked)
     }
 
     return (
         <>
             {item.map((Val) => {
                 return (
-                    <div className="container" >
+                    <div className="container" data-aos="zoom-in-up" >
                         {/* <div className="wrapper"> */}
                         <div class="box-image">
                             <img src={Val.image} width={140} height={200}  alt="..." />

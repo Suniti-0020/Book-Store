@@ -60,7 +60,7 @@ body {
     padding: 0 !important;
     position: absolute !important;
     width: 24px !important;
-    right: -13px ;
+    right: -13px;
     color: #1d4395d1 !important;
 }
 
@@ -69,16 +69,16 @@ body {
 }
 
 .btn {
-    color:  #1d4395d1;
+    color: #52389b;
     padding: 1px 8px;
     border-radius: 9px;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
-    border: 3px solid  #1d4395d1;
+    border: 3px solid #52389b;
 }
- 
+
 .container .box-text .disp .rating {
     position: absolute;
     right: 0px;
@@ -88,10 +88,10 @@ body {
 .container .box-text .disp .btn:hover {
     transform: scale(1.125);
     color: #e1e8f7;
-    background-color: #1d4395;
-    filter: drop-shadow(0 10px 5px rgba(253, 253, 253, 0.125));
+    background-color: #52389b;
+    filter: drop-shadow(0 3px 3px #52389b);
     transition: all .5s ease-in-out;
-    border: 3px solid  #1d4395d1;
+    border: 3px solid #52389b;
 }
 
 .filterBtn {

@@ -56,15 +56,19 @@ body {
     width: 95%;
 }
 
-.container .box-text .disp .bMark {
-    padding: 0 ;
-    position: absolute ;
-    width: 24px ;
+.bMark {
+    padding: 0 !important;
+    position: absolute !important;
+    width: 24px !important;
     right: -13px ;
-    color: #1d4395d1 ;
+    color: #1d4395d1 !important;
 }
 
-.container .box-text .disp .btn {
+.disp {
+    position: relative;
+}
+
+.btn {
     color:  #1d4395d1;
     padding: 1px 8px;
     border-radius: 9px;
@@ -95,6 +99,7 @@ body {
     margin-bottom: 50px;
 }
 
+.filterBtn .btn {
 .filterBtn .btn {
     margin: 10px;
     background-color: #eef5fc;

@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 import "../CSS/Reg&Log.css"
+import { useDispatch } from "react-redux";
+import { authActions } from "./redux/store";
+import toast from "react-hot-toast";
 
 function Login(props) {
+
+    const dispatch = useDispatch();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -13,8 +18,11 @@ function Login(props) {
                 password: inputs.password
             });
             if (data.success) {
-                alert("user login successfully");
-                navigate("/home");
+                localStorage.setItem("userId", data?.user._id);
+                dispatch(authActions.login());
+                toast.success("User login Successfully");
+                navigate("/");
+
             }
         } catch (error) {
             console.log(error);
@@ -62,4 +70,4 @@ function Login(props) {
     )
 }
 
-export default Login 
+export default Login

@@ -50,19 +50,28 @@ body {
     width: 95%;
 }
 
-.container .box-text .disp .bMark {
-    padding: 0 ;
-    position: absolute ;
-    width: 24px ;
+.bMark {
+    padding: 0 !important;
+    position: absolute !important;
+    width: 24px !important;
     right: -13px ;
-    color: #1d4395d1 ;
+    color: #1d4395d1 !important;
 }
 
-.container .box-text .button-wrapper {
+.disp {
+    position: relative;
+}
+    
+.rating {
+    position: absolute;
+    right: 0px;
+}
+
+.button-wrapper {
     margin: 0px 0px 2px;
 }
 
-.container .box-text .disp .btn {
+.btn {
     color:  #1d4395d1;
     padding: 1px 8px;
     border-radius: 9px;
@@ -77,8 +86,23 @@ body {
     right: 0px;
 }
 
-.container .box-text .disp .btn {
-    background:  #e1e8f7;
+.outline {
+    background: transparent;
+    color: rgba(0, 212, 255, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.6);
+    transition: all .3s ease;
+
+}
+
+.outline:hover {
+    transform: scale(1.125);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease;
+}
+
+.fill {
+    background:  rgb(227, 227, 227);
     color: #1d4395d1;
     filter: drop-shadow(0);
     font-weight: bold;
@@ -94,14 +118,7 @@ body {
     filter: drop-shadow(0 10px 5px rgba(253, 253, 253, 0.125));
     transition: all .5s ease-in-out;
     border: 3px solid  #1d4395d1;
-}
-
-/* All books page */
-
-.aBH1 {
-    font-size: 2.5rem !important;
-    margin-bottom: 30px;
-    border-bottom: 5px solid #1d4395d1;
+    ;
 }
 
 .filterBtn {
@@ -109,7 +126,7 @@ body {
     margin-bottom: 50px;
 }
 
-.filterBtn .btn{
+.filterBtn .btn {
     margin: 10px;
     background-color: #eef5fc;
     color: #264d8b;

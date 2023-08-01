@@ -52,7 +52,7 @@ body {
     width: 100%;
 }
 
-.btn {
+.container .box-text .btn {
     color: #52389b;
     padding: 1px 8px;
     border-radius: 9px;
@@ -61,7 +61,7 @@ body {
     letter-spacing: 2px;
     cursor: pointer;
     width: 100%;
-    border: 3px solid  #1d4395d1;
+    border: 3px solid #1d4395d1;
 }
 
 .container .box-text .btn:hover {

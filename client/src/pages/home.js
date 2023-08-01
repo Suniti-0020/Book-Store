@@ -134,7 +134,7 @@ function Home() {
                 </div>
 
                 <div className="featured">
-                    <Book item={item.slice(2, 8)} />
+                    <Book item={item.slice(2, 10)} />
                 </div>
             </div>
         </div>

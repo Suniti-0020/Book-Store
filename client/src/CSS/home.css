@@ -238,7 +238,7 @@
 
 @media (min-width: 1100px){
     #popular-container .featured .container {
-        width: 22%;
+        width: 17%;
     }
 }
 
@@ -273,7 +273,7 @@
     }
 
     #popular-container .featured .container {
-        width: 30%;
+        width: 22%;
     }
 
 }
@@ -293,11 +293,11 @@
     }
 
     #popular-container .featured .container {
-        width: 46%;
+        width: 30%;
     }
 }
 
-@media (max-width: 525px){
+@media (max-width: 580px){
 
     #header .left-header span {
         font-size: 15px;
@@ -327,6 +327,12 @@
         font-size: 20px;
     }
 
+    #popular-container .featured .container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 300px){
     #popular-container .featured .container {
         width: 80%;
     }

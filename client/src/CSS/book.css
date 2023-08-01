@@ -11,81 +11,60 @@ body {
 }
 
 .container {
-    border-radius: 15px;
-    text-align: left;
-    width: 240px;
+    border-radius: 12px;
+    text-align: center;
+    width: 150px;
     position: relative;
     margin: 10px 5px;
-    padding: 20px;
+    padding: 0;
+    overflow: hidden;
     background-color: #ece8e8da;
     transition: all 0.4s ease-out;
-    /* width: 280px; */
     box-shadow: 2px 5px 10px rgba(145, 145, 145, 0.502);
 }
 
 .container .box-image img {
-    border-radius: 8px;
     display: inline-block;
     width: 100%;
     transition: all 0.4s ease-out;
 }
 
+.container .box-text {
+    padding: 0 15px 20px;
+}
+
 .container .box-text .name {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     height: 50px;
     padding-top: 10px;
     color: #02052b;
-    text-align: center;
 }
 
-.container .box-text .disp {
-    position: relative;
-    padding: 5px;
-}
-
-.container .box-text .disp .catg {
+.container .box-text .catg {
     color: #757575;
     font-family: 'Lato', sans-serif;
-    text-align: left;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
-    line-height: 30px;
+    padding: 5px 0;
     letter-spacing: 1.5px;
-    width: 95%;
-}
-
-.bMark {
-    padding: 0 !important;
-    position: absolute !important;
-    width: 24px !important;
-    right: -13px ;
-    color: #1d4395d1 !important;
-}
-
-.disp {
-    position: relative;
+    width: 100%;
 }
 
 .btn {
     color:  #1d4395d1;
     padding: 1px 8px;
     border-radius: 9px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
+    width: 100%;
     border: 3px solid  #1d4395d1;
 }
- 
-.container .box-text .disp .rating {
-    position: absolute;
-    right: 0px;
-}
 
-
-.container .box-text .disp .btn:hover {
+.container .box-text .btn:hover {
     transform: scale(1.125);
     color: #e1e8f7;
     background-color: #1d4395;

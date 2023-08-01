@@ -17,23 +17,13 @@ const Book = ({ item }) => {
             {item.map((Val) => {
                 return (
                     <div className="container" data-aos="zoom-in-up" >
-                        {/* <div className="wrapper"> */}
                         <div class="box-image">
-                            <img src={Val.image} width={140} height={200}  alt="..." />
+                            <img src={Val.image} width={150} height={150}  alt="..." />
                         </div>
                         <div class="box-text">
                             <h1 className="name">{Val.name}</h1>
-                            <div className="disp">
-                                <span className="catg">{Val.category}</span>
-                                <Button className="bMark" onClick={handleIconClick}>
-                                    {clicked ? <BookmarkIcon /> : <TurnedInNotIcon />}
-                                </Button>
-                            </div>
-
-                            <div className="button-wrapper disp">
-                                <button class="btn">Purchase</button>
-                                <span className="rating">{Val.rating}</span>
-                            </div>
+                            <div className="catg">{Val.category}</div>
+                            <button class="btn">Purchase</button>
                         </div>
                     </div>
                 );

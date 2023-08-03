@@ -1,176 +1,59 @@
-/* Improved styles with modern website effects, beautiful boxes, smooth animations with a pop-up effect, and solid borders for the .about-us-section */
-
-.about-us-section {
-  max-width: 1200px;
-  /* Increase the max-width to 1200px */
-  margin: 0 auto;
-  padding: 40px;
-  text-align: center;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Add a subtle box shadow */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: fadeIn 1s ease;
-  /* Fade-in animation when the section is first loaded */
-  border: 2px solid #fff;
-  /* solid border for the .about-us-section */
-  position: relative;
-  /* Required for the moving borders */
-  overflow: hidden;
-  /* solid border for the .about-us-section */
+.about-us-section .title {
+    margin: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    text-align: center;
+    color: darkblue;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+.about-us-section .container {
+    width: 80%;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    padding: 20px 30px;
+    border-radius: 0;
 }
 
-.about-us-section h2 {
-  color: #fff;
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(to right, #646d8f, #4e5777);
-  /* Use gradient for a beautiful background */
-  width: 80%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  /* Required for ::after pseudo-element */
-  border: 2px solid #fff;
-  /* solid border for the h2 box */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Add a box shadow */
-  position: relative;
+.about-us-section ._1 {
+    background-color: rgb(214, 129, 190);
+    margin: 40px 0px 40px auto;
 }
 
-.about-us-section h2::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border: 2px solid #fff;
-  /* solid border for the moving borders */
-  animation: movingBorders 3s linear infinite;
-  /* Animation for moving borders */
+
+.about-us-section ._2 {
+    background-color: rgb(144, 109, 193);
+    margin: 40px auto 40px 0;
 }
 
-.about-us-section h2::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #4e5777;
-  /* Background color of typing effect */
-  left: 0;
-  top: 0;
-  z-index: -1;
-  /* Move behind the text */
-  animation: typing 3s steps(40, end) forwards;
-  /* Typing effect animation */
+.about-us-section ._3 {
+    background-color: rgb(109, 193, 129);
+    margin: 40px 0px 40px auto;
 }
 
-@keyframes movingBorders {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(5px, 5px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
+.about-us-section ._4 {
+    background-color: rgb(151, 162, 110);
+    margin: 40px auto 40px 0px;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
+.about-us-section ._5 {
+    background-color: rgb(190, 119, 100);
+    margin: 40px 0px 40px auto;
 }
 
-.about-us-section h2:hover {
-  background: linear-gradient(to right, #4e5777, #3c455e);
-  /* Adjust gradient on hover */
-  transform: scale(1.1);
-  /* Scale effect on hover */
-  background-color: #4e5777;
-  /* Background color change on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 
-.about-us-section p {
-  font-size: 24px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(to right, #646d8f, #4e5777);
-  /* Use gradient for a beautiful background */
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #fff;
-  /* solid border for the p box */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  /* Added transition for background color change */
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Add a box shadow */
-  position: relative;
-}
-
-.about-us-section p::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border: 2px solid #fff;
-  /* solid border for the moving borders */
-  animation: movingBorders 3s linear infinite;
-  /* Animation for moving borders */
-}
-
-.about-us-section p:hover {
-  background: linear-gradient(to right, #4e5777, #3c455e);
-  /* Adjust gradient on hover */
-  transform: scale(1.05);
-  /* Scale effect on hover */
-  background-color: #4e5777;
-  /* Background color change on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-
-  /* Adjust styles for smaller screens */
-  .about-us-section {
+.about-us-section ._1 .heading1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(253, 253, 253);
     padding: 20px;
-  }
 
-  .about-us-section h2 {
-    font-size: 36px;
-    width: 90%;
-  }
+}
 
-  .about-us-section p {
-    font-size: 20px;
-  }
+.content {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(46, 46, 96);
 }

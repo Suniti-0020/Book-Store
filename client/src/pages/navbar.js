@@ -1,5 +1,4 @@
 import react, { useState } from "react";
-// import { FaBars, FaTimes } from "react-icons/fa";
 import "../CSS/navbar.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
@@ -9,7 +8,6 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-// import { MenuItem } from "@mui/material";sss
 
 
 
@@ -20,10 +18,7 @@ const Navbar = () => {
     isLogin = isLogin || localStorage.getItem("userId");
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    //state
-    // const [value, setValue] = useState();
 
-    //logout
     const handleLogout = () => {
         try {
             dispatch(authActions.logout());
@@ -36,39 +31,8 @@ const Navbar = () => {
     };
 
 
-    // const navRef = useRef()
-    // const showNavbar = () => {
-    //     navRef.current.classList.toggle(
-    //         "show"
-    //     );
-    // };
-
-    // <======== JS Program to Open & Close the Navigation Bar ========>
-    // const middleNavigation = document.querySelector("#navbar .middle-navigation");
-    // const middleNavigationLists = document.querySelectorAll("#navbar .middle-navigation ul li")
-    // const menuBar = document.querySelector("#navbar .right-navigation #menu-btn");
-
-    // react.useEffect(() => {
-    //     menuBar.addEventListener("click", () => {
-    //         middleNavigation.classList.toggle("show");
-    //     });
-    // });
-
-    // react.useEffect(() => {
-    //     middleNavigationLists.forEach((navigation) => {
-    //         navigation.addEventListener("click", () => {
-    //             if (middleNavigation.classList.contains("show")) {
-    //                 middleNavigation.classList.toggle("show");
-    //             }
-    //         })
-    //     });
-    // })
-
     const [Mobile, setMobile] = useState(false)
-    // <div>
-    //     <button onClick={() => setShow(!show)}>Toggle</button>
-    //     <div className={show ? "show" : "hide"}>Hello</div>
-    // </div>
+
 
     return (
         <header>
@@ -77,7 +41,6 @@ const Navbar = () => {
                     <i className="ri-store-2-line"></i>
                     BookRaze
                 </div>
-                {/* <nav > */}
                 {isLogin &&
                     <>
                         <div className={Mobile ? "show middle-navigation" : "hide middle-navigation"} onClick={() => setMobile(false)} >
@@ -89,12 +52,9 @@ const Navbar = () => {
                         </div>
 
                         <div className="right-navigation">
-                            {/* <ul> */}
                             <div className="cart"><NavLink id="cart-btn" activeClassName="active" className="link" to="/collection"><ShoppingCartIcon /></NavLink></div>
                             <div><NavLink activeClassName="active" onClick={handleLogout} className="link" to="/">Logout </NavLink></div>
                             <div id="menu-btn" onClick={() => setMobile(!Mobile)} class="menu-btn hide">{Mobile ? <CloseIcon /> : <MenuIcon />}</div>
-
-                            {/* </ul> */}
                         </div>
                     </>
                 }
@@ -109,32 +69,11 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="right-navigation">
-                            {/* <ul> */}
                             <div><NavLink id="login-btn" activeClassName="active" className="link" to="/login">Login</NavLink></div>
                             <div><NavLink activeClassName="active" className="link" to="/register">Register</NavLink></div>
                             <div id="menu-btn" onClick={() => setMobile(!Mobile)} class="menu-btn hide">{Mobile ? <MenuIcon /> : <CloseIcon />}</div>
-                            {/* </ul> */}
                         </div>
                     </>}
-
-
-
-                {/* <button
-                        className="nav-btn nav-close-btn"
-                        onClick={showNavbar}>
-                        <FaTimes />
-                        <Outlet />
-                    </button> */}
-                {/* </nav> */}
-                {/* <div class="right-navigation">
-                    <div id="menu-btn" onClick={showNavbar} class="ri-menu-line hide"><MenuIcon /></div>
-                </div> */}
-
-                {/* <button
-                    className="nav-btn"
-                    onClick={showNavbar}>
-                    <FaBars />
-                </button> */}
 
             </div>
         </header>

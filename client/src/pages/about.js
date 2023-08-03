@@ -3,51 +3,45 @@ import "../CSS/about.css"
 
 function About() {
     return (<div class="about-us-section">
-       <h2 >Welcome to Book Store</h2>
-        <p>At Book Store, we believe in the magic of books and the power of reading to transport us to new worlds, broaden our horizons, and ignite our imaginations. As passionate book lovers ourselves, we've curated an extensive collection of literary treasures that cater to all tastes and interests. Whether you're an avid reader, a casual bookworm, or searching for the perfect gift, we have something special just for you.
-        </p>
-        <h2>Our Story</h2>
-        <p>
-            [Bookstore Name] began as a dream shared by a group of bibliophiles who wanted to create a haven for book lovers to connect with literature in all its forms. Established in [Year], we have since grown into a beloved community gathering spot for both locals and visitors alike. Our mission is to foster a love for reading and learning while celebrating the written word's beauty and diversity.
+        <div>
+            <h1 className="title">KNOW US</h1>
+        </div>
 
-        </p>
-        <h2>Our Collection</h2>
-        <p>
-            Step into our virtual aisles, and you'll discover a meticulously curated selection of books across various genres. From timeless classics that have withstood the test of time to contemporary bestsellers that keep you on the edge of your seat, we take pride in offering a diverse range of titles to cater to all ages and interests. Whether you're into fiction, non-fiction, sci-fi, romance, mystery, or any other genre, we've got your next literary adventure waiting.
+        <div className="container _1" >
+            <h2 className="heading"> Welcome to BookRaze,</h2>
+            <p className="content">
+                a flourishing book store founded by passionate bibliophiles Suniti, Sarita, Arjun, and Prisha. Our journey began in June with an ardent desire to create a haven for all book lovers. Committed to our vision, we have been diligently working to curate an extensive collection of literary gems and provide an immersive reading experience to our customers. As we continue to expand our offerings and foster a vibrant community, we aim to be the ultimate destination for literary enthusiasts. Join us on this captivating literary adventure as we write new chapters in the world of books. Stay tuned for exciting updates!
+            </p>
+        </div>
+        <div className="container _2">
+            <h2 className="heading"> Join Us on this Literary Adventure: </h2>
+            <p className="content">
+                As BookRaze continues to evolve and flourish, we invite all book lovers to join us on this magical literary adventure. Whether you're an avid reader seeking your next escapade or a curious soul exploring the wonders of literature, BookRaze welcomes you with open arms.
+            </p>
+        </div>
+        <div className="container _3">
+            <h2 className="heading"> BookRaze: Your Literary Haven </h2>
+            <p className="content">
+                BookRaze is a book store with a curated collection, where you can add books to your personal collection and find purchase links. Filter books by genre, author, and more. Create an account to join our reading community, leave book reviews, and engage in book clubs. Discover new reads with personalized recommendations and connect with authors through virtual events. BookRaze: Your gateway to the magic of reading. Join us now!
+            </p>
+        </div>
+        <div className="container  _4">
+            <h2 className="heading">Evolution of the name "BookRaze" </h2>
+            <p className="content">
+                The name "BookRaze" combines "Book" representing literature and "Raze" symbolizing transformative power, implying a platform where readers can explore and have their minds opened to new worlds of knowledge and imagination.
+            </p>
+        </div>
+        <div className="container _5">
+            <h2 className="heading"> Our Mission </h2>
+            <p className="content">
+                BookRaze's name reflects its mission - a platform dedicated to literature where readers can explore the magic of books and experience the transformative power of reading. It symbolizes a place where minds are opened, perspectives are challenged, and new horizons are discovered through the written word. BookRaze goes beyond being a mere book store, fostering a community of passionate readers who come together to celebrate the joy of reading.
+            </p>
+        </div>
 
-        </p>
-        <h2>Community and Events</h2>
-        <p>
-            Beyond being a bookstore, [Bookstore Name] is a vibrant community hub where book lovers come together to share their passion for reading and engage in thought-provoking discussions. Our regular book clubs, author signings, and themed events create an inclusive space where ideas flow, friendships are forged, and the love for literature flourishes. Join us for an upcoming event and immerse yourself in the joy of shared stories and knowledge.
-
-        </p>
-        <h2>Customer Service</h2>
-        <p>
-            We pride ourselves on providing exceptional customer service. Our knowledgeable and friendly staff are always here to assist you in finding the perfect book or recommending new reads based on your preferences. Whether you need help with a specific title, want to explore new authors, or are seeking rare editions, we're dedicated to making your visit to [Bookstore Name] a delightful experience.
-
-        </p>
-        <h2>Online Shopping</h2>
-        <p>
-            For those who prefer the convenience of online shopping, our user-friendly website allows you to browse our collection from the comfort of your own home. We offer fast and reliable shipping options, ensuring your new literary companions reach you swiftly.
-
-        </p>
-        <h2>Contact Us</h2>
-        <p>
-            We love hearing from fellow book enthusiasts! If you have any questions, book recommendations, or just want to share your latest literary find, don't hesitate to get in touch. You can reach us through our contact page or connect with us on social media.
-
-            Thank you for visiting [Bookstore Name]. We hope our passion for books and reading ignites a spark within you and continues to accompany you on your lifelong journey of discovery.
-
-            Happy reading!
-
-            [Bookstore Name] Team
-        </p>
-
-
-      
     </div>
-    
-  
-   
+
+
+
     )
 }
 

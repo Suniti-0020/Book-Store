@@ -27,6 +27,25 @@ body {
     display: inline-block;
     width: 100%;
     transition: all 0.4s ease-out;
+    display: inline-block;
+}
+
+.container .box-image .scart {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    top: 10px;
+    left: 10px;
+}
+
+.container .box-image .scart .cart {
+    color: rgb(64, 64, 119);
+    width: 24px;
 }
 
 .container .box-text {

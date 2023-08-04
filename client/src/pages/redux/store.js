@@ -1,4 +1,6 @@
 import { createSlice, configureStore } from "@reduxjs/toolkit";
+import cartSystem from "./cartSystem";
+
 
 const authSlice = createSlice({
     name: "auth",
@@ -18,4 +20,5 @@ export const authActions = authSlice.actions;
 
 export const store = configureStore({
     reducer: authSlice.reducer,
+    reducer: { user: cartSystem },
 });

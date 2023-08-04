@@ -2,6 +2,9 @@
     background-color: #52389b;
     padding-top: 40px;
     padding-bottom: 10px;
+    position: static;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer-content h3 {

@@ -28,7 +28,7 @@ function Home() {
                 </div>
 
                 <div class="right-header aos-init aos-animate" data-aos="fade-left">
-                    <img src="./images/bFace.png" alt="Header"/>
+                    <img src="./images/bFace.png" alt="Header" />
 
                 </div>
             </div>
@@ -37,47 +37,47 @@ function Home() {
 
             <div id="category-container">
                 <div class="category-container-box" data-aos="fade-up">
-                    <img src="./images/science-fiction.png" alt="Science fiction"/>
+                    <img src="./images/science-fiction.png" alt="Science fiction" />
                     <h3>Science Fiction</h3>
                 </div>
 
                 <div class="category-container-box" data-aos="fade-down">
-                    <img src="./images/horror.png" alt="horror"/>
+                    <img src="./images/horror.png" alt="horror" />
                     <h3>Horror</h3>
                 </div>
 
                 <div class="category-container-box" data-aos="fade-up">
-                    <img src="./images/romance.png" alt="romance"/>
+                    <img src="./images/romance.png" alt="romance" />
                     <h3>Romance</h3>
                 </div>
 
                 <div class="category-container-box" data-aos="fade-down">
-                    <img src="./images/classic.png" alt="classic"/>
+                    <img src="./images/classic.png" alt="classic" />
                     <h3>Classic</h3>
                 </div>
 
                 <div class="category-container-box" data-aos="fade-up">
-                    <img src="./images/Fantasy.png" alt="Fantasy"/>
+                    <img src="./images/Fantasy.png" alt="Fantasy" />
                     <h3>Fantasy</h3>
                 </div>
 
                 <div class="category-container-box" data-aos="fade-down">
-                    <img src="./images/mystery.png" alt="mystery"/>
+                    <img src="./images/mystery.png" alt="mystery" />
                     <h3>Mystery</h3>
                 </div>
 
                 <div class="category-container-box" data-aos="fade-up">
-                    <img src="./images/Hystorical-Fiction.png" alt="H-Fiction"/>
+                    <img src="./images/Hystorical-Fiction.png" alt="H-Fiction" />
                     <h3>Historical Fiction</h3>
                 </div>
 
                 <div class="category-container-box" data-aos="fade-down">
-                    <img src="./images/adventure.png" alt="adventure"/>
+                    <img src="./images/adventure.png" alt="adventure" />
                     <h3>Adventure</h3>
                 </div>
 
                 <div class="category-container-box" data-aos="fade-up">
-                    <img src="./images/drama.png" alt="drama"/>
+                    <img src="./images/drama.png" alt="drama" />
                     <h3>Drama</h3>
                 </div>
             </div>
@@ -86,7 +86,7 @@ function Home() {
 
             <div id="about-container">
                 <div class="left-about-container" data-aos="fade-right">
-                    <img src="./images/aboutMain.png" alt="About"/>
+                    <img src="./images/aboutMain.png" alt="About" />
                 </div>
 
                 <div class="right-about-container" data-aos="fade-left">
@@ -94,32 +94,32 @@ function Home() {
                     <h3 class="title">The Elements that Spice up our Seading Journey??</h3>
                     <p>Exceptional Book selection, Leave your Mark with Book Reviews, Easy Purchase Links, Create Your Personal Book Collection,
                         Advanced Book Filtering, Exclusive Titles available, Seamless browsing, User-friendly interface.
-                       <br />Choose us for an Unforgettable Reading Experience.
+                        <br />Choose us for an Unforgettable Reading Experience.
                     </p>
 
                     <div class="right-about-container-icons">
                         <div class="right-about-container-icons-box">
-                            <img src="./images/newArrival.png" alt="Fresh-Arrivals"/>
+                            <img src="./images/newArrival.png" alt="Fresh-Arrivals" />
                             <h3>Fresh Arrivals</h3>
                         </div>
 
                         <div class="right-about-container-icons-box">
-                            <img src="./images/wideSelection.webp" alt="Wide-Selection"/>
+                            <img src="./images/wideSelection.webp" alt="Wide-Selection" />
                             <h3>Wide Selection</h3>
                         </div>
 
                         <div class="right-about-container-icons-box">
-                            <img src="./images/bestQ.png" alt="Best-Quality"/>
+                            <img src="./images/bestQ.png" alt="Best-Quality" />
                             <h3>Best Quality</h3>
                         </div>
 
                         <div class="right-about-container-icons-box">
-                            <img src="./images/customerR.png" alt="Customer-Reviews"/>
+                            <img src="./images/customerR.png" alt="Customer-Reviews" />
                             <h3>Customer Reviews</h3>
                         </div>
 
                         <div class="right-about-container-icons-box">
-                            <img src="./images/userFriendly.png" alt="User-Friendly"/>
+                            <img src="./images/userFriendly.png" alt="User-Friendly" />
                             <h3>User-Friendly Interface</h3>
                         </div>
 

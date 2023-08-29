@@ -24,16 +24,61 @@ function AllBooks() {
 
 
 
+    const [searchField, setSearchField] = useState("");
+    const [searchShow, setSearchShow] = useState(false);
+
+
+    const filteredBooks = bookspedia.filter(
+        items => {
+            return (
+                items
+                    .name
+                    .toLowerCase()
+                    .includes(searchField.toLowerCase())
+            );
+
+        }
+    );
+
+    const handleChange = e => {
+        setSearchField(e.target.value);
+        if (e.target.value === "") {
+            setSearchShow(false);
+        }
+        else {
+            setSearchShow(true);
+        }
+    };
+
+    const filtered = filteredBooks.map((item) => item.name);
+
+
     return (
         <div id="popular-container">
-            <div className="featured">
-                <h1 className="aBH1">All Books</h1>
-                <Buttons
-                    filterItem={filterItem}
-                    setItem={setItem}
-                    menuItems={menuItems}
-                />
-                <Book item={item} />
+            <div className="">
+                <div className="srch">
+                    <div className="tc ma0 pa4">
+                        <div className="pa2">
+                            <input
+                                className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
+                                type="search"
+                                placeholder="Search book"
+                                onChange={handleChange}
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div className="featured">
+                    <h1 className="aBH1">All Books</h1>
+
+                    <Buttons
+                        filterItem={filterItem}
+                        setItem={setItem}
+                        menuItems={menuItems}
+                    />
+                    <Book item={searchShow ? filteredBooks : item} />
+
+                </div>
             </div>
         </div>
     )

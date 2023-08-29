@@ -11,8 +11,6 @@ const Cart = () => {
 
     const dispatch = useDispatch();
 
-    console.log(cart)
-
 
     const navigate = useNavigate();
 

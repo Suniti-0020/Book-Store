@@ -10,6 +10,19 @@ body {
     border-bottom: 4px solid #180255;
 }
 
+.srch {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    margin-right: 15px;
+    margin-left: auto;
+    align-items: end;
+    justify-content: left;
+    right: 0;
+    left: auto;
+}
+
 .container {
     border-radius: 12px;
     text-align: center;

@@ -10,10 +10,14 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: NodeTool@0
+- task: AzureResourceManagerTemplateDeployment@3
   inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+    deploymentScope: 'Subscription'
+    azureResourceManagerConnection: 'Visual Studio Enterprise Subscription(acc490e1-d7f7-4cf8-99ac-37b1c4ab18ea)'
+    subscriptionId: 'acc490e1-d7f7-4cf8-99ac-37b1c4ab18ea'
+    location: 'Central India'
+    templateLocation: 'Linked artifact'
+    deploymentMode: 'Incremental'
 
 - script: |
     npm install

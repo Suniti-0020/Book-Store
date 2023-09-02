@@ -32,7 +32,7 @@ const Cart = () => {
                                 <div class="box-text">
                                     <h1 className="name">{item.name}</h1>
                                     <div className="catg">{item.category}</div>
-                                    <button class="btn">Purchase</button>
+                                    <a href={item.purchase}><button class="btn">Purchase</button></a>
                                 </div>
                             </div>
                         );

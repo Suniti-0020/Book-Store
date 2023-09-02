@@ -24,7 +24,7 @@ const Book = ({ item }) => {
                         <div class="box-text">
                             <h1 className="name">{Val.name}</h1>
                             <div className="catg">{Val.category}</div>
-                            <button class="btn">Purchase</button>
+                            <a href={Val.purchase}><button class="btn">Purchase</button></a>
                         </div>
                     </div>
                 );

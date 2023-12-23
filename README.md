@@ -22,9 +22,9 @@ As the project is still in development, it is not yet deployed. However, you can
 We welcome contributions from the community to enhance the project and make it even better. Here's how you can contribute:
 
 1. Fork the repository and clone it to your local machine.
-2. Then open a new terminal and in main folder write command 'npm i' .
-3. The 'cd client' and write again 'npm i'.
-4. Now move to the main folder 'cd ..' then to run the project write command 'npm run dev'. 
+2. Then open a new terminal and in main folder write command `npm i` .
+3. The 'cd client' and write again `npm i`.
+4. Now move to the main folder `cd ..` then to run the project write command `npm run dev`. 
 5. Create a new branch with a descriptive name: `git checkout -b feature/your-feature-name`.
 6. Make your changes and improvements.
 7. Commit your changes: `git commit -m "Add some feature"`.

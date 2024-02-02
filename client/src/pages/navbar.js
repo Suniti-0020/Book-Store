@@ -1,27 +1,20 @@
 import react, { useState } from "react";
 import "../CSS/navbar.css";
 import { NavLink, useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { authActions } from "../pages/redux/store";
 import toast from "react-hot-toast";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-
-
 const Navbar = () => {
 
-    // global state
-    let isLogin = useSelector((state) => state.isLogin);
-    isLogin = isLogin || localStorage.getItem("userId");
-    const dispatch = useDispatch();
+    let isLogin = localStorage.getItem('islogin');
     const navigate = useNavigate();
 
     const handleLogout = () => {
         try {
-            dispatch(authActions.logout());
+            localStorage.setItem("islogin", false)
             toast.success("Logout Successfully");
             navigate("/login");
             localStorage.clear();
@@ -53,7 +46,7 @@ const Navbar = () => {
 
                         <div className="right-navigation">
                             <div className="cart"><NavLink id="cart-btn" activeClassName="active" className="link" to="/collection"><ShoppingCartIcon /></NavLink></div>
-                            <div><NavLink activeClassName="active" onClick={handleLogout} className="link" to="/">Logout </NavLink></div>
+                            <div><NavLink activeClassName="active" onClick={handleLogout} className="link" to="/" >Logout </NavLink></div>
                             <div id="menu-btn" onClick={() => setMobile(!Mobile)} class="menu-btn hide">{Mobile ? <CloseIcon /> : <MenuIcon />}</div>
                         </div>
                     </>
@@ -71,7 +64,7 @@ const Navbar = () => {
                         <div className="right-navigation">
                             <div><NavLink id="login-btn" activeClassName="active" className="link" to="/login">Login</NavLink></div>
                             <div><NavLink activeClassName="active" className="link" to="/register">Register</NavLink></div>
-                            <div id="menu-btn" onClick={() => setMobile(!Mobile)} class="menu-btn hide">{Mobile ? <MenuIcon /> : <CloseIcon />}</div>
+                            <div id="menu-btn" onClick={() => setMobile(!Mobile)} className="menu-btn hide">{Mobile ? <MenuIcon /> : <CloseIcon />}</div>
                         </div>
                     </>}
 

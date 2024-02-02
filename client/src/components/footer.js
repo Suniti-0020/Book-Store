@@ -9,8 +9,8 @@ import "../CSS/footer.css"
 function Footer() {
     const year = new Date().getFullYear();
     return (
-            <footer>
-        <div class="footer-content">
+        <footer>
+            <div className="footer-content">
                 <h3>BooKraze</h3>
                 <p>Discover a World of Stories</p>
                 <div className="icons">
@@ -23,8 +23,8 @@ function Footer() {
                     </ul>
                 </div>
                 <p className="copyright"> Copyright ⓒ {year}</p>
-        </div>
-            </footer>
+            </div>
+        </footer>
     );
 }
 

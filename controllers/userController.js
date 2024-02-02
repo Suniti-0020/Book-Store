@@ -1,7 +1,7 @@
 const userModel = require('../models/userModel');
 const bcrypt = require("bcrypt")
 
-//creat user register user
+//create user register user
 exports.registerController = async (req, res) => {
     try {
         const { username, email, password } = req.body

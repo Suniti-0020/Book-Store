@@ -3,6 +3,8 @@ import Book from "./book";
 import bookspedia from "../bookspedia";
 import Buttons from "./button";
 
+import { NavLink, useNavigate } from "react-router-dom";
+
 
 
 function AllBooks() {
@@ -49,8 +51,9 @@ function AllBooks() {
             setSearchShow(true);
         }
     };
-
+    const navigate = useNavigate();
     const filtered = filteredBooks.map((item) => item.name);
+    let isLogin = localStorage.getItem('islogin');
 
 
     return (

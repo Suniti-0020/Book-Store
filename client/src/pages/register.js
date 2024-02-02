@@ -1,24 +1,25 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios"
-import "../CSS/Reg&Log.css"
+import axios from "axios";
+import "../CSS/Reg&Log.css";
 
 function Register(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('/api/v1/user/register', {
+            const { data } = await axios.post('/register', {
                 username: inputs.name,
                 email: inputs.email,
                 password: inputs.password
             });
             if (data.success) {
-                alert("user regisr successfully");
+                alert("user registered successfully");
                 navigate("/login");
             }
         } catch (error) {
-            console.log(error);
+            alert(error.response.data.message);
+            console.log(error.response.data.message);
         }
     }
 

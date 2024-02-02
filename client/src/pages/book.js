@@ -17,14 +17,14 @@ const Book = ({ item }) => {
             {item.map((Val) => {
                 return (
                     <div className="container" data-aos="zoom-in-up" ><div key={Val.id}></div>
-                        <div class="box-image">
+                        <div className="box-image"  >
                             <img src={Val.image} width={150} height={190} alt="..." />
                             <button className="scart" onClick={() => dispatch(AddCart(Val))}><ShoppingCartIcon className="cart" /></button>
                         </div>
-                        <div class="box-text">
-                            <h1 className="name">{Val.name}</h1>
+                        <div className="box-text">
+                            <h1 className="name" >{Val.name}</h1>
                             <div className="catg">{Val.category}</div>
-                            <a href={Val.purchase}><button class="btn">Purchase</button></a>
+                            <a href={Val.purchase}><button className="btn">Purchase</button></a>
                         </div>
                     </div>
                 );

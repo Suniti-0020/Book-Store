@@ -1,31 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
-import "../CSS/Reg&Log.css"
-import { useDispatch } from "react-redux";
-import { authActions } from "./redux/store";
+import "../CSS/Reg&Log.css";
 import toast from "react-hot-toast";
 
-function Login(props) {
 
-    const dispatch = useDispatch();
+
+function Login(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('/api/v1/user/login', {
+            const { data } = await axios.post('/login', {
                 email: inputs.email,
                 password: inputs.password
             });
+            console.log(data);
+            window.sessionStorage.setItem("userdetails", JSON.stringify(data));
+
             if (data.success) {
-                localStorage.setItem("userId", data?.user._id);
-                dispatch(authActions.login());
+                alert(data.message);
                 toast.success("User login Successfully");
                 navigate("/");
-
+                alert(localStorage.getItem('islogin'));
             }
         } catch (error) {
             console.log(error);
+            alert(error);
         }
     }
 
@@ -70,4 +71,4 @@ function Login(props) {
     )
 }
 
-export default Login
+export default Login;

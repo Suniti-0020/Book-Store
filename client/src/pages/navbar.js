@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import react, { useEffect, useState } from "react";
 import "../CSS/navbar.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -11,6 +11,8 @@ const Navbar = () => {
 
     let isLogin = localStorage.getItem('islogin');
     const navigate = useNavigate();
+
+    console.log(localStorage.getItem('islogin'))
 
     const handleLogout = () => {
         try {

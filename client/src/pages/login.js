@@ -17,7 +17,7 @@ function Login(props) {
             });
             console.log(data);
             window.sessionStorage.setItem("userdetails", JSON.stringify(data));
-
+            window.localStorage.setItem("islogin", true);
             if (data.success) {
                 alert(data.message);
                 toast.success("User login Successfully");

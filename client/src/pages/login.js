@@ -4,8 +4,6 @@ import axios from "axios"
 import "../CSS/Reg&Log.css";
 import toast from "react-hot-toast";
 
-
-
 function Login(props) {
 
     const handleSubmit = async (e) => {

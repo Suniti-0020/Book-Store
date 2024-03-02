@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { RemoveFromCart } from "./redux/cartSystem";
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -10,9 +9,6 @@ const Cart = () => {
     const { cart } = useSelector((item) => item.user)
 
     const dispatch = useDispatch();
-
-
-    const navigate = useNavigate();
 
     return (
         <div className="size">

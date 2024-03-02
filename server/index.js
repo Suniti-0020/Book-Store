@@ -26,11 +26,18 @@ app.use(morgan('dev'))
 
 // routes
 app.use('/api/v1/user', userRoutes)
-// app.get('/', (req, res ) => {
-//     res.status(200).send({
-//         'message': "Node server"
-//     })
-// })
+app.use(cors(
+    {
+        origin: ["https://book-store-yq73.vercel.app/"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+))
+
+app.get("/", (req, res) => {
+    res.send("Hello from server!");
+});
+
 
 // port
 const PORT = process.env.PORT || 8080

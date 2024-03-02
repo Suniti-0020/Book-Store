@@ -8,7 +8,7 @@ function Register(props) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('/register', {
+            const { data } = await axios.post('https://book-store-one-smoky.vercel.app/api/v1/user/register', {
                 username: inputs.name,
                 email: inputs.email,
                 password: inputs.password

@@ -3,6 +3,7 @@ import Book from "./book"
 import bookspedia from "../bookspedia";
 import "../CSS/home.css"
 import AOS from "aos";
+import 'aos/dist/aos.css';
 
 AOS.init({
     duration: 1200,
@@ -19,7 +20,7 @@ function Home() {
             {/* Header section */}
 
             <div id="header">
-                <div className="left-header aos-init aos-animate" data-aos="fade-right">
+                <div className="left-header aos-animate" data-aos="fade-right">
                     <span>Step into a realm of captivating stories and endless adventures</span>
                     <h3>Welcome to BookRaze!!!</h3>
                     <p>Join BookRaze and immerse yourself in the enchanting universe of books, where each page holds the promise of discovery.</p>
